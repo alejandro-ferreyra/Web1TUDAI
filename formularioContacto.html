@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TusComercios - Contacto</title>
+  <link rel="icon" type="image/png" href="./assets/icons/icon.png"/>
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/navbar.css">s
+</head>
+<body>
+  <nav class="navbar">
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <div id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca Nuestro</a>
+        <a href="formularioContacto.html">Contactanos</a>
+        <a href="admin-comercios.html" style="color: #00d1b2;">Gestionar</a>
+      </div>
+  </nav>
+
+
+<header>
+    <h1>Contactanos</h1>
+</header>
+  <main>
+    <div class="form-container">
+        <form id="Formulario">
+        <h2>Formulario de Contacto</h2>
+
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        
+        <label>Mensaje:</label>
+        <textarea id="mensaje"  rows="10" required></textarea>
+
+        <div id="captchaContainer" class="hidden">
+          <div class="captcha-box">
+            <span id="captchaTexto"></span>
+            <button type="button" id="btnGenerarCaptcha" title="Generar nuevo captcha">↻</button>
+          </div>
+          <input type="text" id="captchaInput" placeholder="Ingrese el texto del captcha">
+          <button type="button" id="btnValidarCaptcha">Validar</button>
+          <label id="captchaResultado"></label>
+        </div>
+
+        <button type="submit" id="btnEnviar" disabled>Enviar</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Tus Comercios. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="./js/form.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0D1424;
+  color: white;
+}
+
+  
+/* MOBILE FIRST - Botones visibles */
+.botones-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-ir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #6a5af9, #00d1b2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-ir:hover {
+  transform: scale(1.05);
+}
+
+/*Tarjetas ocultas en mobile */
+.tarjetas-desktop {
+  display: none;
+}
+
+/* ESTILOS TARJETAS PANTAllAS GRANDES */
+.tarjeta {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s;
+  color: #0D1424;
+  
+}
+
+.imagen {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.btn-perfil {
+  border-radius: 50px;
+  background: linear-gradient(45deg, #6a5af9, #00d1b2);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  
+}
+
+ .btn-perfil:hover {
+  background-color: gray;
+  color: #0D1424;
+  }
+
+.footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+}
+
+
+/* VISTA pantallas grandes  */
+@media (min-width: 769px) {
+  .botones-mobile {
+    display: none;
+  }
+
+  .tarjetas-desktop {
+    display: grid;
+    padding-top: 2% ;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle Comercio</title>
+  <link rel="icon" type="image/png" href="./assets/icons/icon.png"/>
+  
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/comercios.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/vercomercio.css">
+</head>
+<body>
+
+  <nav class="navbar">
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <div id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca Nuestro</a>
+        <a href="formularioContacto.html">Contactanos</a>
+        <a href="admin-comercios.html" style="color: #00d1b2;">Gestionar</a>
+      </div>
+  </nav>
+
+  <header>
+    <h1 id="nombre-comercio">Cargando...</h1>
+    
+    <div class="detalle-img-container">
+        <img id="img-detalle" class="detalle-img" src="./assets/img/base.png" alt="Foto Comercio">
+    </div>
+  </header>
+
+  <main>
+    <div class="comercio-tabla">
+      <table>
+         <tr>
+            <td>Dirección:</td>
+            <td id="dato-direccion">...</td>
+         </tr>
+         <tr>
+            <td>Teléfono:</td>
+            <td id="dato-telefono">...</td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td id="dato-email">...</td>
+        </tr>
+        <tr>
+          <td>Horarios:</td>
+          <td id="dato-horarios">...</td>
+        </tr>
+        <tr>
+          <td>Instagram:</td>
+          <td id="dato-instagram">...</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="detalle-acciones">
+        <button class="btn-volver" onclick="window.history.back()">Volver</button>
+        <button class="btn-volver" id="btn-ver-productos">Ver Productos</button>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tus Comercios. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="./js/detalle.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-container {
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  
+  
+}
+
+form {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+#captchaTexto {
+  font-size: 24px;    
+  letter-spacing: 4px;
+  font-family: monospace;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#btnGenerarCaptcha {
+  width: 32px;          
+  height: 32px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#btnGenerarCaptcha:hover {
+  background-color: #bdbdbd;
+}
+
+#captchaResultado {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  min-height: 20px;
+  text-align: center;
+}
+
+#captchaResultado.ok {
+  color: green;
+}
+
+#captchaResultado.error {
+  color: red;
+}
+.footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+}

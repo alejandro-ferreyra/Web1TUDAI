@@ -1,0 +1,58 @@
+/* Ajuste del contenedor principal*/
+.admin-container.table-container-fix {
+    max-width: 1000px;
+}
+
+/* Forzar que la tabla ocupe todo el ancho disponible */
+.comercio-tabla.full-width-table {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto; /* Scroll horizontal en móviles */
+}
+
+/* superpone estilko comercios.css */
+.comercio-tabla table td:first-child {
+    width: auto;
+    font-weight: normal;
+    color: white;
+}
+
+/* Encabezado de la tabla de productos */
+.comercio-tabla table th {
+    background: linear-gradient(45deg, #6a5af9, #00d1b2);
+    color: black;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #111a33;
+}
+
+/* Bsotones de paginación */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-paginacion {
+    background-color: #0D1424;
+    color: white;
+    border: 1px solid #2a3458;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-paginacion:hover:not(:disabled) {
+    background-color: #6a5af9;
+    border-color: #6a5af9;
+}
+
+.btn-paginacion:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #0a101d;
+}

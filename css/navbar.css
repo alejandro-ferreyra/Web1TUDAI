@@ -1,0 +1,79 @@
+
+body {
+  background-color: #0D1424;
+}
+/* NAVBAR */
+.navbar {
+  
+  background-color: #0D1424;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* BOTÓN HAMBURGUESA / FLECHA */
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* MENÚ */
+.menu {
+  
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: gray;
+  color:#0D1424;
+  
+}
+
+/* VISTA pantallas grandes  */
+@media (min-width: 769px) {
+
+
+/* navbar desktop */ 
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    
+    
+  }
+
+  .menu a {
+    background-color: transparent;
+    padding:10px0;
+  }
+
+  
+}
+

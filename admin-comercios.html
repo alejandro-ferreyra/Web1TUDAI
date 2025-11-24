@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Comercios</title>
+  <link rel="stylesheet" href="./css/comercios.css">
+  <link rel="stylesheet" href="./css/navbar.css"> 
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <div id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca Nuestro</a>
+        <a href="formularioContacto.html">Contactanos</a>
+        <a href="admin-comercios.html" style="color: #00d1b2;">Gestionar</a>
+      </div>
+  </nav>
+
+  <header><h1>Gestión de Comercios</h1></header>
+
+  <main>
+    <div class="admin-container">
+      <h2 id="form-titulo" style="text-align:center; margin-bottom:1rem;">Nuevo Comercio</h2>
+      
+      <form id="form-comercio">
+        <input type="hidden" id="id-comercio">
+
+        <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required placeholder="Ej: Tdi Informatica">
+        </div>
+        
+        <div class="form-group">
+            <label>URL Imagen:</label>
+            <input type="text" id="imagen" placeholder="https://...">
+        </div>
+
+        <div class="form-group">
+            <label>Dirección:</label>
+            <input type="text" id="direccion" required placeholder="Calle 123">
+        </div>
+
+        <div class="form-group">
+            <label>Teléfono:</label>
+            <input type="text" id="telefono" placeholder="+54...">
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="@...">
+        </div>
+
+        <div class="form-group">
+            <label>Horarios:</label>
+            <input type="text" id="horarios">
+        </div>
+
+        <div class="form-group">
+            <label>Instagram:</label>
+            <input type="text" id="instagram" placeholder="@usuario">
+        </div>
+
+        <button type="submit" class="btn-guardar" id="btn-submit">Guardar Comercio</button>
+        <button type="button" class="btn-guardar btn-cancelar" id="btn-cancelar" style="display: none;">Cancelar Edición</button>
+      </form>
+    </div>
+
+    <div class="admin-container">
+      <h2 style="text-align:center; margin-bottom:1rem;">Listado</h2>
+      <div id="lista-comercios">
+        <p style="text-align:center;">Cargando...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><p>&copy; 2025 Tus Comercios.</p></footer>
+  <script src="./js/admin.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

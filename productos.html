@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Productos</title>
+  <link rel="icon" type="image/png" href="./assets/icons/icon.png"/>
+  
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/comercios.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/productos.css"> 
+</head>
+<body>
+
+  <nav class="navbar">
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <div id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Acerca Nuestro</a>
+        <a href="formularioContacto.html">Contactanos</a>
+        <a href="admin-comercios.html" style="color: #00d1b2;">Gestionar</a>
+      </div>
+  </nav>
+
+  <header><h1>Gestión de Productos</h1></header>
+
+  <main>
+    <div class="admin-container">
+      <h2 id="form-titulo" style="text-align:center; margin-bottom:1rem;">Nuevo Producto</h2>
+      
+      <form id="form-productos">
+        <input type="hidden" id="id-producto">
+
+        <div class="form-group">
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" required placeholder="Ej: Monitor 24 pulgadas">
+        </div>
+        
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" required placeholder="Ej: Samsung">
+        </div>
+
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" required placeholder="Ej: 150000" step="0.01">
+        </div>
+
+        <button type="submit" class="btn-guardar" id="btn-submit">Guardar Producto</button>
+        <button type="button" class="btn-guardar btn-cancelar" id="btn-cancelar" style="display: none;">Cancelar Edición</button>
+      </form>
+    </div>
+
+    <div class="admin-container table-container-fix">
+      <h2 style="text-align:center; margin-bottom:1rem;">Listado de Productos</h2>
+      
+      <div class="comercio-tabla full-width-table">
+        <table id="tabla-productos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Marca</th>
+              <th>Precio</th>
+              <th style="text-align: center;">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            </tbody>
+        </table>
+      </div>
+
+      <div class="pagination-controls">
+        <button id="btn-prev" class="btn-paginacion" disabled>Anterior</button>
+        <span id="page-info">Página 1</span>
+        <button id="btn-next" class="btn-paginacion">Siguiente</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer"><p>&copy; 2025 Tus Comercios.</p></footer>
+
+  <script src="./js/productos.js"></script>
+</body>
+</html>
