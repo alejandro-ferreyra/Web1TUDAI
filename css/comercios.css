@@ -57,7 +57,8 @@ main {
   height: 200px;
   background: #000;
   border-bottom: 2px solid #bcbcbc;
-  overflow: hidden;
+  
+  border-radius: 0 !important;
 }
 
 .rating {
